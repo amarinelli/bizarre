@@ -1,13 +1,13 @@
 html {
     height: 100%;
     
-    /* background: url("../images/") no-repeat center center;
+    /* background: url("") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
 
-    background-color: #5f9ea0; /* cadetblue */
+    background-color: #000000;
   }
   
   body {
@@ -15,7 +15,7 @@ html {
   }
 
   .container {
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
   }
 
@@ -23,4 +23,21 @@ html {
     width: 45%;
     margin: 0 auto;
     padding-top: 1%;
+  }
+
+  /* Prevent blue highlight on link click */
+  .noSelect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  @media (max-width: 1000px) {
+    .logo {
+      width: 60%;
+    }
   }
