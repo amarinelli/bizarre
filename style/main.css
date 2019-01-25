@@ -7,7 +7,7 @@ html {
     -o-background-size: cover;
     background-size: cover; */
 
-    background-color: #000000;
+    background-color: #444444;
   }
   
   body {
@@ -20,7 +20,7 @@ html {
   }
 
   .logo {
-    width: 45%;
+    width: 20%;
     margin: 0 auto;
     padding-top: 1%;
   }
@@ -38,6 +38,12 @@ html {
 
   @media (max-width: 1000px) {
     .logo {
-      width: 60%;
+      width: 30%;
+    }
+  }
+
+  @media (max-width: 500px) {
+    .logo {
+      width: 40%;
     }
   }
