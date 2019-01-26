@@ -1,49 +1,79 @@
 html {
-    height: 100%;
-    
-    /* background: url("") no-repeat center center;
+  height: 100%;
+  background-color: #444444;
+  /* background: url("") no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover; */
+}
 
-    background-color: #444444;
-  }
-  
-  body {
-    font-family: sans-serif;
-  }
+body {
+  height: 100%;
+  width: 100%;
+  margin: auto;
+  font-family: monospace;
+  color: white;
+}
 
-  .container {
-    width: 100%;
-    margin: 0 auto;
-  }
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
 
+.logo {
+  width: 20%;
+  margin: 0 auto;
+  padding-top: 1%;
+}
+
+.subtitle {
+  text-align: center;
+  padding-top: 10px;
+}
+
+h3 {
+  font-size: 14px;
+}
+
+.links {
+  text-align: center;
+  position: fixed;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+}
+
+.links>a {
+  font-size: 50px;
+  font-family: 'Monoton', cursive;
+  display: block;
+  background-color: #444444;
+  cursor: pointer;
+  color: inherit;
+  text-decoration: inherit;
+}
+
+/* Prevent blue highlight on link click */
+
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+@media (max-width: 1000px) {
   .logo {
-    width: 20%;
-    margin: 0 auto;
-    padding-top: 1%;
+    width: 30%;
   }
+}
 
-  /* Prevent blue highlight on link click */
-  .noSelect {
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;
-    -khtml-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    -webkit-tap-highlight-color: transparent;
+@media (max-width: 500px) {
+  .logo {
+    width: 70%;
   }
-
-  @media (max-width: 1000px) {
-    .logo {
-      width: 30%;
-    }
-  }
-
-  @media (max-width: 500px) {
-    .logo {
-      width: 40%;
-    }
-  }
+}
