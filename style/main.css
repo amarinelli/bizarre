@@ -22,9 +22,8 @@ body {
 }
 
 .logo {
-  width: 20%;
+  width: 70%;
   margin: 0 auto;
-  padding-top: 1%;
 }
 
 .subtitle {
@@ -38,10 +37,10 @@ h3 {
 
 .links {
   text-align: center;
-  position: fixed;
+  /* position: fixed;
   bottom: 30px;
   left: 0;
-  right: 0;
+  right: 0; */
 }
 
 .links>a {
@@ -66,14 +65,53 @@ h3 {
   -webkit-tap-highlight-color: transparent;
 }
 
-@media (max-width: 1000px) {
-  .logo {
-    width: 30%;
-  }
+/*  SECTIONS  */
+
+.section {
+  clear: both;
+  height: 100%;
 }
 
-@media (max-width: 500px) {
-  .logo {
-    width: 70%;
+/*  COLUMN SETUP  */
+
+.col {
+  display: block;
+  float: left;
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.col:first-child {
+  margin-left: 0;
+}
+
+/*  GROUPING  */
+
+.group:before, .group:after {
+  content: "";
+  display: table;
+}
+
+.group:after {
+  clear: both;
+}
+
+/* GRID OF TWO */
+
+.span_2_of_2 {
+  width: 100%;
+}
+
+.span_1_of_2 {
+  width: 49.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 700px) {
+  .span_2_of_2, .span_1_of_2 {
+    width: 100%;
+    top: 20%;
   }
 }
