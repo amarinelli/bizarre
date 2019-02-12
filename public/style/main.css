@@ -1,13 +1,35 @@
 html {
   height: 100%;
-  /* background: url("") no-repeat center center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover; */
+  background: url("/public/images/fire.jpg") no-repeat center center;
+  background-size: cover;
+  background-color: black;
 }
 
 body {
-  height: 100%;
-  width: 100%;
+  position: absolute;
+  width: 20vh;
+  top: 5vh;
+  right: 5vh;
+}
+
+.image {}
+
+.icons {
+  font-size: 1.8em;
+  color: white;
+  display: grid;
+}
+
+.icons>i {
+  text-align: right;
+  padding-top: 10px;
+}
+
+@media (max-width: 475px) {
+  .container {
+    position: inherit;
+    width: 30vh;
+    margin: 0 auto 0 auto;
+    padding: 5vh;
+  }
 }
