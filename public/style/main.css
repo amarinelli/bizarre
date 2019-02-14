@@ -6,38 +6,42 @@ html {
 }
 
 body {
-  position: absolute;
-  top: 2vh;
-  right: 3vh;
-}
-
-body>div {
-  float: left;
-}
-
-.icons {
-  font-size: 2.5em;
-  color: white;
-}
-
-.icons>i {
-  text-align: right;
-  padding-right: 25px;
-}
-
-.last {
-  padding-right: 4vh !important;
+  width: 100vw;
+  height: 100vh;
+  margin: auto;
 }
 
 .image {
-  width: 15vw;
+  width: 12vw;
+  position: absolute;
+  left: 15px;
+  top: 15px;
 }
 
-@media (max-width: 475px) {
-  .container {
-    position: inherit;
-    width: 30vh;
-    margin: 0 auto 0 auto;
-    padding: 5vh;
-  }
+.icons {
+  font-size: 2vw;
+  color: white;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+}
+
+.icons>i {
+  padding-left: 25px;
+}
+
+.subtitle {
+  width: 20vw;
+  height: 25vh;
+  margin: auto;
+  color: white;
+  padding-bottom: 10vh;
+  font-size: 1vw;
+  font-family: 'Share Tech Mono', monospace;
+  text-align: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
