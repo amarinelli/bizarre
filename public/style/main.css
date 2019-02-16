@@ -11,6 +11,14 @@ body {
   margin: auto;
 }
 
+::selection {
+  background: #FFFFFF;
+}
+
+::-moz-selection {
+  background: #FFFFFF;
+}
+
 .image {
   width: 12vw;
   position: absolute;
