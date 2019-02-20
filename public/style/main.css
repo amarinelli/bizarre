@@ -22,11 +22,33 @@ body {
   background: #FFFFFF;
 }
 
+.about {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  background-color: #000000ba;
+}
+
+.about-text {
+  margin: auto;
+  display: inline-block;
+  width: 100vw;
+  padding-top: 10vh;
+}
+
+.about-text-1 {
+  color: white;
+  font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+}
+
 .image {
   width: 12vw;
   position: absolute;
   left: 50px;
   top: 45px;
+  z-index: -1;
 }
 
 .footer {
@@ -62,9 +84,16 @@ body {
 .icon {
   padding-left: 15px;
   padding-right: 15px;
+  cursor: pointer;
 }
 
 @media (max-width: 450px) {
+  .about {
+    height: calc(100vh - 75px);
+  }
+  .about-text-1 {
+    font-size: 25px;
+  }
   .image {
     width: 50vw;
     bottom: 20px;
