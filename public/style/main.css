@@ -67,9 +67,12 @@ body {
 @media (max-width: 450px) {
   .image {
     width: 50vw;
-    bottom: 50px;
+    bottom: 20px;
     top: unset;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .footer {
+    height: 75px;
   }
 }
