@@ -31,13 +31,38 @@ body {
 .about-text {
   margin: auto;
   display: inline-block;
-  width: 100vw;
+  width: 60vw;
   padding-top: 10vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
 }
 
-.about-text-1 {
+.about-text-title {
+  display: block;
   color: white;
   font-size: 50px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Share Tech Mono', monospace;
+  padding-bottom: 50px;
+}
+
+.about-text-details {
+  display: block;
+  color: white;
+  font-size: 25px;
+  margin: 0 auto;
+  text-align: justify;
+  font-family: 'Share Tech Mono', monospace;
+  padding-bottom: 50px;
+}
+
+.about-text-contact {
+  display: block;
+  color: white;
+  font-size: 25px;
   margin: 0 auto;
   text-align: center;
   font-family: 'Share Tech Mono', monospace;
