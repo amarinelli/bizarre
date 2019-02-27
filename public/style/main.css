@@ -1,11 +1,9 @@
 html {
   height: 100%;
   background: url("../images/backgrounds/pillars.jpg") no-repeat center center;
-  background-color: black;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
+  background-color: black;
+  transition: background 1s linear;
 }
 
 body {
@@ -72,7 +70,24 @@ body {
   width: 12vw;
   position: absolute;
   left: 50px;
-  top: 45px;
+  top: 45px
+}
+
+.dots {
+  position: absolute;
+  bottom: 85px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dot {
+  padding-right: 5px;
+  color: black;
+  font-size: 30px;
+}
+
+.selected {
+  color: white;
 }
 
 .footer {
@@ -125,6 +140,9 @@ body {
     top: unset;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+  .dots {
+    bottom: 60px;
   }
   .footer {
     height: 75px;

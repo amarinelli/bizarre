@@ -63,6 +63,13 @@
     <div class="image">
         <img class="logo" src="images/bizarre_logo_white_straight.svg" alt="Logo">
     </div>
+    <div class="dots">
+        <span id="dot-0" class="dot selected">•</span>
+        <span id="dot-1" class="dot">•</span>
+        <span id="dot-2" class="dot">•</span>
+        <span id="dot-3" class="dot">•</span>
+        <span id="dot-4" class="dot">•</span>
+    </div>
     <div class="footer">
         <div class="container">
             <div class="icons">
@@ -79,7 +86,7 @@
             </div>
         </div>
     </div>
-    <script>
+    <script language="javascript" type="text/javascript">
         function toggleAbout() {
             var about = document.getElementById("about");
             if (about.style.display === "none") {
@@ -88,6 +95,38 @@
                 about.style.display = "none";
             }
         }
+
+        function changeImage() {
+
+            // Update background image
+            document.getElementsByTagName("html")[0].style.background = background_images[images_index];
+            document.getElementsByTagName("html")[0].style.backgroundSize = "cover";
+            document.getElementsByTagName("html")[0].style.backgroundColor = "black";
+
+            images_index++;
+
+            // Remove selected dot
+            document.getElementById("dot-" + (images_index - 1)).classList.remove("selected");
+
+            if (images_index === background_images.length) {
+                images_index = 0;
+            }
+
+            // Add selected dot
+            document.getElementById("dot-" + images_index).classList.add("selected");
+        }
+
+        var images_index = 0;
+        var background_images = new Array()
+        background_images[0] = "url('../images/backgrounds/couple.jpg') no-repeat center center";
+        background_images[1] = "url('../images/backgrounds/fence-girl.jpg') no-repeat center center";
+        background_images[2] = "url('../images/backgrounds/nonno.jpg') no-repeat center center";
+        background_images[3] = "url('../images/backgrounds/skye.jpg') no-repeat center center";
+        background_images[4] = "url('../images/backgrounds/pillars.jpg') no-repeat center center";
+
+        // Update background image every 6 seconds
+        setInterval("changeImage()", 5000);
+
     </script>
 </body>
 
