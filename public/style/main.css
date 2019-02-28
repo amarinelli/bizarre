@@ -41,6 +41,7 @@ body {
   display: block;
   color: white;
   font-size: 50px;
+  font-weight: 600;
   margin: 0 auto;
   text-align: center;
   font-family: 'Share Tech Mono', monospace;
@@ -85,7 +86,7 @@ body {
 .dot {
   padding-right: 5px;
   color: black;
-  font-size: 30px;
+  font-size: 32px;
 }
 
 .selected {
@@ -137,11 +138,14 @@ body {
     padding-top: unset;
   }
   .about-text-title {
-    font-size: 35px;
+    font-size: 30px;
   }
   .about-text-details {
-    font-size: 20px;
-    text-align: left;
+    font-size: 18px;
+    text-align: center;
+  }
+  .about-text-contact {
+    font-size: 18px;
   }
   .image {
     background: url("../images/bizarre_logo_white_horizontal.svg") no-repeat center center;
