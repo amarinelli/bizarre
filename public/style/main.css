@@ -161,7 +161,7 @@ div#preload {
     width: 80vw;
     padding-top: unset;
     left: 15px;
-    top: 40%;
+    top: 20%;
     transform: unset;
   }
   .about-text-title {
@@ -189,5 +189,8 @@ div#preload {
   }
   .footer {
     height: 75px;
+  }
+  .icon {
+    height: 30px;
   }
 }
