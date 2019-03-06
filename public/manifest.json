@@ -1,0 +1,18 @@
+{
+  "short_name": "Bizarre",
+  "name": "Bizarre Media Production",
+  "description": "Bizarre is a full service media production company. We’ll work with you to take your vision from concept to creation. All our work is done in-house, so we’re streamline and cost effective. We’re passionate about storytelling. Let us tell yours.",
+  "lang": "en-CA",
+  "start_url": ".",
+  "icons": [
+    {
+      "src": "/images/bizarre_logo_192x192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "background_color": "#000000",
+  "theme_color": "#000000",
+  "display": "standalone",
+  "orientation": "portrait"
+}
