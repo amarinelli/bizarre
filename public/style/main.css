@@ -3,7 +3,7 @@ html {
   background: url("../images/backgrounds/pillars.jpg") no-repeat center center;
   background-size: cover;
   background-color: black;
-  transition: background 0.2s linear;
+  transition: background 0.3s linear;
 }
 
 body {
@@ -127,6 +127,10 @@ body {
   padding-right: 15px;
   cursor: pointer;
   height: 35px;
+}
+
+div#preload {
+  display: none;
 }
 
 @media (max-width: 1100px) {
