@@ -3,7 +3,7 @@ html {
   background: url("../images/backgrounds/pillars.jpg") no-repeat center center;
   background-size: cover;
   background-color: black;
-  transition: background 0.5s ease-in;
+  transition: background 400ms;
 }
 
 body {
