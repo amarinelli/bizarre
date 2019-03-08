@@ -153,6 +153,8 @@ div#preload {
   }
 }
 
+/* MOBILE DISPLAY (portrait) */
+
 @media (max-width: 650px) {
   .about {
     height: calc(100vh - 75px);
@@ -160,29 +162,28 @@ div#preload {
   .about-text {
     width: 80vw;
     padding-top: unset;
-    left: 15px;
-    top: 20%;
-    transform: unset;
+    left: 50%;
+    top: 50%;
   }
   .about-text-title {
     font-size: 30px;
-    text-align: left;
+    text-align: center;
   }
   .about-text-details {
     font-size: 18px;
-    text-align: left;
+    text-align: center;
   }
   .about-text-contact {
     font-size: 16px;
-    text-align: left;
+    text-align: center;
   }
   .image {
     background: url("../images/bizarre_logo_white_horizontal.svg") no-repeat center center;
-    width: 300px;
-    height: 50px;
-    left: 15px;
+    height: 14vw;
     top: 15px;
-    transform: unset;
+    width: 85%;
+    left: 50%;
+    transform: translate(-50%);
   }
   .dots {
     bottom: 60px;
