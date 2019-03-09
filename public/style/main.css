@@ -146,7 +146,6 @@ div#preload {
   }
   .about-text-details {
     font-size: 20px;
-    text-align: center;
   }
   .about-text-contact {
     font-size: 18px;
@@ -167,23 +166,18 @@ div#preload {
   }
   .about-text-title {
     font-size: 30px;
-    text-align: center;
   }
   .about-text-details {
     font-size: 18px;
-    text-align: center;
   }
   .about-text-contact {
     font-size: 16px;
-    text-align: center;
   }
   .image {
-    background: url("../images/bizarre_logo_white_horizontal.svg") no-repeat center center;
-    height: 14vw;
-    top: 15px;
-    width: 85%;
-    left: 50%;
-    transform: translate(-50%);
+    width: 30vw;
+    height: 30vw;
+    left: 20px;
+    top: 20px;
   }
   .dots {
     bottom: 60px;
