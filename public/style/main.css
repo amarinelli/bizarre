@@ -1,5 +1,6 @@
 html {
-  height: 99%;
+  height: 100%;
+  width: 100%;
   background: url("../images/backgrounds/pillars.jpg") no-repeat center center;
   background-size: cover;
   background-color: black;
@@ -7,8 +8,8 @@ html {
 }
 
 body {
-  width: 100vw;
-  height: 99vh;
+  height: 100%;
+  width: 100%;
   margin: auto;
 }
 
@@ -133,6 +134,16 @@ div#preload {
   display: none;
 }
 
+.noSelect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 @media (max-width: 1100px) {
   .image {
     width: 225px;
@@ -187,5 +198,19 @@ div#preload {
   }
   .icon {
     height: 30px;
+  }
+}
+
+@media (max-width: 650px) and (max-height: 750px) {
+  .about-text {
+    top: 52%;
+    width: 85vw;
+  }
+  .about-text-title {
+    font-size: 25px;
+    padding-bottom: 25px;
+  }
+  .about-text-details {
+    font-size: 16px;
   }
 }
