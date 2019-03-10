@@ -192,6 +192,7 @@ div#preload {
   }
   .dots {
     bottom: 60px;
+    cursor: default;
   }
   .footer {
     height: 75px;
