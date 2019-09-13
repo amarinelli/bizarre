@@ -49,20 +49,6 @@
 </head>
 
 <body>
-    <div class="about" id="about" style="display: none;">
-        <div class="about-text">
-            <span class="about-text-title">IN THE BUSINESS OF DIFFERENT</span>
-            <span class="about-text-details">
-                Bizarre is a full service media production company. We’ll work with you to take your vision from concept
-                to creation. All our work is done in-house, so we’re streamline and cost effective. We’re passionate
-                about storytelling. Let us tell yours.
-            </span>
-            <span class="about-text-logo"></span>
-            <span class="about-text-contact">
-                Contact us: info@bizarre.productions
-            </span>
-        </div>
-    </div>
     <div class="image"></div>
     <div class="dots">
         <span id="dot-0" class="dot selected">•</span>
@@ -83,7 +69,6 @@
                 <a href="mailto:info@bizarre.productions" target="_blank" rel="noopener">
                     <img class="icon" src="images/icons/email.svg">
                 </a>
-                <img id="menu" class="icon noSelect" src="images/icons/menu.svg" onclick="toggleAbout()">
             </div>
         </div>
     </div>
@@ -97,23 +82,6 @@
     </div>
 
     <script language="javascript" type="text/javascript">
-        function toggleAbout() {
-
-            var menu = document.getElementById("menu");
-            if (menu.src.match("menu.svg")) {
-                menu.src = "images/icons/x.svg";
-            } else {
-                menu.src = "images/icons/menu.svg";
-            }
-
-            var about = document.getElementById("about");
-            if (about.style.display === "none") {
-                about.style.display = "block";
-            } else {
-                about.style.display = "none";
-            }
-        }
-
         function changeImage() {
 
             // Update background image
