@@ -61,7 +61,7 @@ body {
   margin: auto;
 }
 
-.icons {
+.menu {
   width: 100%;
   color: white;
   text-align: center;
@@ -71,16 +71,19 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.icons>a {
+.menu>a {
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
+  font-size: 50px;
+  font-family: 'Share Tech Mono', monospace;
   color: inherit;
+  line-height: 0px;
 }
 
-.icon {
-  padding-left: 15px;
-  padding-right: 15px;
-  cursor: pointer;
-  height: 35px;
+.menu>a:hover {
+  text-decoration: underline;
 }
 
 div#preload {
@@ -122,5 +125,10 @@ div#preload {
   }
   .icon {
     height: 30px;
+  }
+  .menu>a {
+    font-size: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
